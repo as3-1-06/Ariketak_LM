@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>DIV_MARGIN</title>
-
+        
         <style>
 
+            div{
+		        border-radius: 5px;
+	        }
+	        
+            .contenedor{
+		        background-color:#CCC;
+		        width:100%;
+        		height:100px;
+	        }
+
+        	.contenido{
+		        height:80px;
+		        width:10%;
+		        float:left;
+		        margin: 10px;
+                text-align: center;
+                font-size: 250%;
+	        }
+
             img {
-                width: 100%;
+                width: 20%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .handia {
                 background-color: black;
-                color: darkorange;
+                color: white;
                 margin: 5px;
                 padding: 10px;
             }
 
             .txikia {
-
-                margin: 7px;
+                background-color: white;
+                text-align: center;
+                color: black;
+                padding: 0%;
+                margin: 0px;
             }
         
         </style>
 
     </head>
     <body>
+
+            <div class="contenedor">
+                    <div class="contenido">bat</div>
+                    <div class="contenido">bi</div>
+                    <div class="contenido">hiru</div>
+                    <div class="contenido">lau</div>
+                </div>
+
         <div class="handia">
+            <h1>Cita a cinco en television</h1>
             <div class="txikia">
                 
-                <h1></h1>
-
+                <p>Sánchez, Casado, Rivera, Iglesias y Abascal se ven las caras por primera vez en el único debate electoral de la campaña</p>
+                
+                <img src="IMG/ejer01_1.jpg">
             </div>
 
+            <h1>El debate deja todo abierto hasta el final</h1>
+
+            <div class="txikia">
+                
+                <img src="IMG/ejer01_2.jpg">
+
+                <p>Era la última oportunidad para el desbloqueo. Y se perdió. El debate, según coinciden dirigentes de las formaciones centrales, no logró despejar la gran incógnita con la que se llega a la repetición electoral: ¿Servirá para algo esta vez? ¿Habrá un Gobierno estable? Todo quedó tan abierto como antes de llegar al cruce.</p>
+
+            </div>
         </div>
     </body>
 </html>

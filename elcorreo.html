@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title></title>
+       
+              <style>
+                body {
+                    background-color: whitesmoke;
+                    background-repeat: no-repeat;
+                    background-size: 100%;    
+              }
+                ul {
+                    list-style-type: none;
+                    margin: 1;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: whitesmoke;
+            }
+
+                li {
+                 float: left;
+            }
+
+                li a {
+                    display: block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                
+            }
+
+                .suscribete {
+                    background-color: red;
+                    color: white;
+            }
+                li a:hover {
+                 background-color: whitesmoke;
+            }
+                img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 30%;
+            }
+
+                .zona1 {
+                    height: 65%;
+            }
+
+                .zona2 {
+                    height: 35%;
+            }
+
+                .izquierda {
+                    float: left;
+                    width: 55%;
+                    margin-left: 5%;
+            }
+                .derecha {
+                    float: right;
+                    width: 35%;
+                    margin-left: 5%;
+            }
+
+                .titulo {
+                    color: brown;
+                    font-size: 250%
+            }
+
+                .titulo2 {
+                    color: brown;
+                    font-size: 150%
+            }
+            
+                * {
+                    box-sizing: border-box;
+             }
+
+                .box {
+                    float: left;
+                    width: 33.33%;
+                    padding: 50px;
+            }
+
+                .clearfix::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+            }
+
+                .general {
+                    margin:0 auto;
+                    width: 900px;
+            }
+
+            </style>
+            </head>
+            <body>
+        <div>
+        <div>
+
+            <ul>
+            <li><a class="active" href="#bizkaia">Bizkaia</a></li>
+            <li><a href="#politica">Politica</a></li>
+            <li><a href="#mundo">Mundo</a></li>
+            <li><a href="#economia">Economia</a></li>
+            <li><a href="#athletic">Athletic</a></li>
+            <li><a href="#deportes">Deportes</a></li>
+            <li><a href="#sociedad">Sociedad</a></li>
+            <li><a href="#culturas">Culturas</a></li>
+            <li style="float:right"><a class="suscribete" href="#suscribete">Suscribete</a>
+            </ul>
+            
+        </div>  
+
+        <div>
+        <a href="https://www.elcorreo.com"><img src="img/logo1.png"></a>          
+        </div>
+
+        <div class="general">
+            <div class="zona1">
+                <div class="izquierda">
+                    <div style="float: left">
+                        <img src="img/ath1.jpg" style="width: 90%; height:100%;">
+                        <h2 class="titulo">El Athletic toma el fortín de El Sadar</h2>
+                        <p>Los rojiblancos logran su primera victoria fuera de casa y rompen la racha de Osasuna como local en un partido donde brillaron Sancet, Unai Simón y Kodro</p>
+                    </div>
+                </div>
+                <div class="derecha">
+                    <div>
+                        <img src="img/ath2.jpg"  style="width: 60%; height:100%;">
+                        <h2 class="titulo2">Raúl García sustituido con molestias en el pubis</h2>
+                    </div>
+                    <div>
+                        <img src="img/ath3.jpg"  style="width: 60%; height:100%;">
+                        <h2 class="titulo2">Los paradones de Unai Simón</h2>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br>
+            <div class="clearfix" style="float: left; margin-left: 10%;">
+                <div class="box" >
+                <img src="img/box1.jpg" style="width: 70%; height:100%;">
+                <h2>Búscate en las fotos de la Santurce - Bilbao</h2>
+                </div>
+                <div class="box" >
+                <img src="img/box2.jpg" style="width: 70%; height:100%;">
+                <h2>Alberto Sánchez y Jeputo-Cherop se imponen</h2>
+                </div>
+                <div class="box" >
+                    <iframe width="70%" height="100%" src="https://www.youtube.com/embed/1oF7G7MG1Aw" frameborder="0" allow="accelerometer; ; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2>Rahm se lleva todo el Mérito</h2>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
