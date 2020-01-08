@@ -1,5 +1,5 @@
 # Ariketak_LM
-Ariketak lenguaje de marca
+Ariketak lenguaje de marcas
 
 
 ## 1EBAL
