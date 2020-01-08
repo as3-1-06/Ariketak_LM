@@ -111,12 +111,21 @@
             <li><a href="#sociedad">Sociedad</a></li>
             <li><a href="#culturas">Culturas</a></li>
             <li style="float:right"><a class="suscribete" href="#suscribete">Suscribete</a>
+            <li style="float:right">
+                <form action="echo_ejer.php">
+                <select name="Lenguaje">
+                  <option value="Eusk">Euskera</option>
+                  <option value="Esp">Español</option>
+                  <option value="Eng">English</option>
+                </select>
+            </form>
+            </li>
             </ul>
             
         </div>  
 
         <div>
-        <a href="https://www.elcorreo.com"><img src="img/logo1.png"></a>          
+        <a href="https://www.elcorreo.com"><img src="IMG/logo1.png"></a>          
         </div>
 
         <div class="general">
@@ -153,6 +162,19 @@
                     <iframe width="70%" height="100%" src="https://www.youtube.com/embed/1oF7G7MG1Aw" frameborder="0" allow="accelerometer; ; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <h2>Rahm se lleva todo el Mérito</h2>
                 </div>
+            </div>
+            <div>
+                <form action="echo_ejer.php" style="float: left">
+                    <textarea name="message" rows="10" cols="30">Opinion</textarea>
+                    <br>
+                    <input type="submit">
+                </form>
+                <form action="echo_ejer.php" style="float: right">
+                    <h1>TEMAS DEL MOMENTO</h1>
+                    <a href="https://www.elcorreo.com/deportes/futbol/liga-primera/barca-madrid-iran-20191216164700-nt.html"><input type="radio" name="gender" value="male" checked>El clasico </a><br>
+                    <a href="https://www.elcorreo.com/deportes/futbol/liga-primera/messi-benzema-factores-diferenciales-clasico-20191217132156-ntrc.html"> <input type="radio" name="gender" value="female">Messi </a><br>
+                    <a href="https://www.elcorreo.com/deportes/futbol/liga-segunda/interrumpido-rayoalbacete-canticos-20191215214741-ntrc.html"> <input type="radio" name="gender" value="other">Zozulia  </a><br>
+                </form>
             </div>
         </div>
     </body>
