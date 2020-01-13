@@ -8,16 +8,17 @@
 
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<button id="boton1" onclick="document.getElementById('myImage').src='img/si.jpg'">Baieztatu</button>
+<button id="boton1" onclick="document.getElementById('myImage').src='si.jpg'">Baieztatu</button>
 
-<img id="myImage" src="img/si.jpg" style="width:100px">
+<img id="myImage" src="si.jpg" style="width:100px">
 
-<button id="boton2" onclick="document.getElementById('myImage').src='img/no.jpg'">Ezeztatu</button>
+<button id="boton2" onclick="document.getElementById('myImage').src='no.jpg'">Ezeztatu</button>
 
 <script>
 
 function ocultar () {
 
+document.getElementById("myImage").style.display = "none";
 document.getElementById("boton1").style.display = "none";
 document.getElementById("boton2").style.display = "none";
 
@@ -25,8 +26,9 @@ document.getElementById("boton2").style.display = "none";
 
 function mostrar () {
 
-document.getElementById("boton1").style.display = "block";
-document.getElementById("boton2").style.display = "block";
+document.getElementById("myImage").style.display = "inline";
+document.getElementById("boton1").style.display = "inline";
+document.getElementById("boton2").style.display = "inline";
 document.getElementById("boton0").style.display = "none";
 
 }
