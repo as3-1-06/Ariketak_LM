@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="margin: auto;text-align: left">Calculadora</h1>
+
+<script>
+
+function suma() {
+    x = document.getElementById("numero_x").value;
+    y = document.getElementById("numero_y").value; 
+    
+    x = parseInt(x);
+    y = parseInt(y);
+    
+    document.getElementById("resultado").innerHTML = x + y;
+}
+
+function resta() {
+    x = document.getElementById("numero_x").value;
+    y = document.getElementById("numero_y").value; 
+    
+    x = parseInt(x);
+    y = parseInt(y);
+    
+    document.getElementById("resultado").innerHTML = x - y;
+}
+
+</script>
+
+   <p class="solid" id="resultado">0</p>
+    <input type="text" id="numero_x"><br>
+    <input type="text" id="numero_y"><br>
+    <button type="button" onclick="suma()"> + </button>
+    <button type="button" onclick="resta()"> - </button>
+
+
+</body>
+</html>
