@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hiru lerroan jokoa!</title>
+<meta charset="UTF-8" />
+<script>
+var mapa = [0, 0, 0, 0, 0, 0, 0, 0, 0,];
+var jugador = 1;
+function markatu(){
+ for(i=0; i<9; i++){
+ if(mapa[i] == 0) document.getElementById("c"+i).style="background-color: white";
+ if(mapa[i] == 1) document.getElementById("c"+i).style="background-color: red";
+ if(mapa[i] == 2) document.getElementById("c"+i).style="background-color: blue"; 
+ }
+}
+function pcelda(celda){
+if (mapa[celda]==0) {
+ if (jugador==1){
+ mapa[celda]=1;
+ jugador=2;
+ } else {
+ mapa[celda]=2;
+ jugador=1; 
+ }
+} else {
+window.alert("Leku hau markatuta dago, beste bat aukeratu");
+}
+markatu();
+ var r = irabazi();
+ switch(r){
+  case 0:
+   break;
+  case 1:
+   window.alert("Gorriak irabazi du");
+   break;
+  case 2:
+   window.alert("Urdiñak irabazi du");
+   break;
+  case 3:
+   window.alert("Berdinduta amaitu da partida");
+   break; 
+}
+}
+function irabazi(){
+var numEspacios=0;
+for(i=0; i<9; i++){
+if(mapa[i] == 0) numEspacios++;
+}
+//Horizontalak
+if(mapa[0] == mapa[1] && mapa[1] == mapa[2] && mapa[0] !=0) return mapa[0];
+if(mapa[3] == mapa[4] && mapa[4] == mapa[5] && mapa[3] !=0) return mapa[3];
+if(mapa[6] == mapa[7] && mapa[7] == mapa[8] && mapa[6] !=0) return mapa[6];
+//Bertikalak
+if(mapa[0] == mapa[3] && mapa[3] == mapa[6] && mapa[0] !=0) return mapa[0];
+if(mapa[1] == mapa[4] && mapa[4] == mapa[7] && mapa[1] !=0) return mapa[1];
+if(mapa[2] == mapa[5] && mapa[5] == mapa[8] && mapa[2] !=0) return mapa[2];
+//Diagonalak
+if(mapa[0] == mapa[4] && mapa[4] == mapa[8] && mapa[0] !=0) return mapa[0];
+if(mapa[2] == mapa[4] && mapa[4] == mapa[6] && mapa[2] !=0) return mapa[2];
+
+if (numEspacios > 0){
+return 0;
+} else {
+return 3;
+}
+}
+</script>
+</head>
+<body>
+<table align="center" border="0">
+<tr>
+<td width="300" align="center">Hiru lerroan jokoa!</td>
+</tr>
+
+</table>
+<table align="center" border="1">
+ <tr>
+  <td width="150" height="150" id="c0" onclick="pcelda(0)"></td>
+  <td width="150" height="150" id="c1" onclick="pcelda(1)"></td>
+  <td width="150" height="150" id="c2" onclick="pcelda(2)"></td>
+ </tr>
+ <tr>
+  <td width="150" height="150" id="c3" onclick="pcelda(3)"></td>
+  <td width="150" height="150" id="c4" onclick="pcelda(4)"></td>
+  <td width="150" height="150" id="c5" onclick="pcelda(5)"></td>
+ </tr>
+ <tr>
+  <td width="150" height="150" id="c6" onclick="pcelda(6)"></td>
+  <td width="150" height="150" id="c7" onclick="pcelda(7)"></td>
+  <td width="150" height="150" id="c8" onclick="pcelda(8)"></td>
+ </tr>
+ </table>
+ <table align="center" border="0">
+  <tr>   
+   <td width="300"  align="center"><br />
+    <a href="javascript:location.reload()">
+    <button>Berrabiarazi</button></a>
+   </td>   
+  </tr>
+</table>
+</body>
+</html>
