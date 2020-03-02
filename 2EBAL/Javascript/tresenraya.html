@@ -8,7 +8,7 @@
   var mapa = [0, 0, 0, 0, 0, 0, 0, 0, 0,];
   
   var jugador = 1;
-   
+   // Jokalariaren arabera markatu beharko den kolorea.
     function markatu(){
     for(i=0; i<9; i++){
     if(mapa[i] == 0) document.getElementById("c"+i).style="background-color: white";
@@ -16,6 +16,7 @@
     if(mapa[i] == 2) document.getElementById("c"+i).style="background-color: blue"; 
     }
   }
+  // Jokalarien turnoa zelda bakoitza markatzerakoan, eta markatuta badago abisua ematen du.
   function pcelda(celda){
      if (mapa[celda]==0) {
     if (jugador==1){
@@ -28,6 +29,7 @@
    } else {
       window.alert("Leku hau markatuta dago, beste bat aukeratu");
   }
+  // Jokalari batek irabazten duenean edo partida amaitzean agertzen diren abisuak.
   markatu();
     var r = irabazi();
       switch(r){
@@ -44,29 +46,28 @@
         break; 
       }
     }
-  
+  // Irabazteko gertatu behar diren kondizioak.
   function irabazi(){ 
-
-  var numEspacios=0;
+    var numEspacios=0;
 
     for(i=0; i<9; i++){
       if(mapa[i] == 0) numEspacios++;
     }
 
-    //Horizontalak
+    //Linea horizontalak
     if(mapa[0] == mapa[1] && mapa[1] == mapa[2] && mapa[0] !=0) return mapa[0];
     if(mapa[3] == mapa[4] && mapa[4] == mapa[5] && mapa[3] !=0) return mapa[3];
     if(mapa[6] == mapa[7] && mapa[7] == mapa[8] && mapa[6] !=0) return mapa[6];
     
-    //Bertikalak
+    //Linea bertikalak
     if(mapa[0] == mapa[3] && mapa[3] == mapa[6] && mapa[0] !=0) return mapa[0];
     if(mapa[1] == mapa[4] && mapa[4] == mapa[7] && mapa[1] !=0) return mapa[1];
     if(mapa[2] == mapa[5] && mapa[5] == mapa[8] && mapa[2] !=0) return mapa[2];
 
-    //Diagonalak
+    //Linea diagonalak
     if(mapa[0] == mapa[4] && mapa[4] == mapa[8] && mapa[0] !=0) return mapa[0];
     if(mapa[2] == mapa[4] && mapa[4] == mapa[6] && mapa[2] !=0) return mapa[2];
-
+    //Kondizio bat ere ez bada gertatzen segi egiten du.
     if (numEspacios > 0){ 
     return 0;
     } else {
@@ -104,7 +105,8 @@
 
   <table align="center" border="0">
     <tr>   
-      <td width="300"  align="center"><br />
+      <td width="300"  align="center"><br /> 
+        <!-- Botoi honekin jokoa berriz hasten da. -->
         <button onclick="location.reload()">Berrabiarazi</button></a>
       </td>   
     </tr>
