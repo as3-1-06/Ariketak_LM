@@ -20,7 +20,7 @@ https://github.com/as3-1-06/Ariketak_LM/tree/master/2EBAL/Javascript
 https://github.com/as3-1-06/Ariketak_LM/tree/master/2EBAL/PHP
 
 ### JOKOA
-https://as3-1-06.github.io/Ariketak_LM/Javascript/tresenraya.html
+https://as3-1-06.github.io/Ariketak_LM/2EBAL/Javascript/tresenraya.html
 
 
 
