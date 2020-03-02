@@ -29,21 +29,21 @@
       window.alert("Leku hau markatuta dago, beste bat aukeratu");
   }
   markatu();
-  var r = irabazi();
-    switch(r){
-      case 0:
-      break;
-      case 1:
-      window.alert("Gorriak irabazi du");
-      break;
-      case 2:
-      window.alert("Urdiñak irabazi du");
-      break;
-      case 3:
-      window.alert("Berdinduta amaitu da partida");
-      break; 
-     }
-  }
+    var r = irabazi();
+      switch(r){
+        case 0:
+        break;
+        case 1:
+        window.alert("Gorriak irabazi du");
+        break;
+        case 2:
+        window.alert("Urdiñak irabazi du");
+        break;
+        case 3:
+        window.alert("Berdinduta amaitu da partida");
+        break; 
+      }
+    }
   
   function irabazi(){ 
 
@@ -105,11 +105,10 @@
   <table align="center" border="0">
     <tr>   
       <td width="300"  align="center"><br />
-        <a href="javascript:location.reload()">
-        <button>Berrabiarazi</button></a>
+        <button onclick="location.reload()">Berrabiarazi</button></a>
       </td>   
     </tr>
   </table>
-  
+
 </body>
 </html>
