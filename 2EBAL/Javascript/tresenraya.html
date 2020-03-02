@@ -11,17 +11,17 @@
    // Jokalariaren arabera markatu beharko den kolorea.
     function markatu(){
     for(i=0; i<9; i++){
-    if(mapa[i] == 0) document.getElementById("c"+i).style="background-color: white";
-    if(mapa[i] == 1) document.getElementById("c"+i).style="background-color: red";
-    if(mapa[i] == 2) document.getElementById("c"+i).style="background-color: blue"; 
+      if(mapa[i] == 0) document.getElementById("c"+i).style="background-color: white";
+      if(mapa[i] == 1) document.getElementById("c"+i).style="background-color: red";
+      if(mapa[i] == 2) document.getElementById("c"+i).style="background-color: blue"; 
     }
   }
   // Jokalarien turnoa zelda bakoitza markatzerakoan, eta markatuta badago abisua ematen du.
   function pcelda(celda){
      if (mapa[celda]==0) {
-    if (jugador==1){
-     mapa[celda]=1;
-      jugador=2;
+      if (jugador==1){
+      mapa[celda]=1;
+        jugador=2;
     } else {
       mapa[celda]=2;
       jugador=1; 
